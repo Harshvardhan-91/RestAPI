@@ -2,6 +2,7 @@ package config
 
 import (
 	"flag"
+	"log"
 	"os"
 )
 
@@ -24,5 +25,13 @@ func MustLoad() {
 		flags := flag.String("config", "", "path to the configuration file")
 		flag.Parse()
 		configPath = *flags
+
+		if configPath == "" {
+			log.Fatal("Config path is not set")
+		}
+	}
+
+	if _, err := os.Stat(configPath); os.IsNotExist(err){
+		log.Fatal("config file does not exist: %s", configPath);
 	}
 }
