@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/codersgyan/students-api/internal/config"
-	"github.com/codersgyan/students-api/internal/types"
+	"github.com/Harshvardhan-91/RestAPI/internal/config"
+	"github.com/Harshvardhan-91/RestAPI/internal/types"
 	_ "github.com/mattn/go-sqlite3"
 )
 

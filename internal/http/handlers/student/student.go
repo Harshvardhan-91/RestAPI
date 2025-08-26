@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/codersgyan/students-api/internal/storage"
-	"github.com/codersgyan/students-api/internal/types"
-	"github.com/codersgyan/students-api/internal/utils/response"
+	"github.com/Harshvardhan-91/RestAPI/internal/storage"
+	"github.com/Harshvardhan-91/RestAPI/internal/types"
+	"github.com/Harshvardhan-91/RestAPI/internal/utils/response"
 	"github.com/go-playground/validator/v10"
 )
 

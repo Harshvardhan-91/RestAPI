@@ -1,6 +1,6 @@
 package storage
 
-import "github.com/codersgyan/students-api/internal/types"
+import "github.com/Harshvardhan-91/RestAPI/internal/types"
 
 type Storage interface {
 	CreateStudent(name string, email string, age int) (int64, error)
